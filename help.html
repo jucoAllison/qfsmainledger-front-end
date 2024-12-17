@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#000000">
+    <title>QFS Main Ledger</title>
+    <meta name="description" content="QFS Main Ledger">
+    <meta name="keywords"
+        content="wallet, banking, fintech mobile template, cordova, phonegap, mobile, html, responsive" />
+   <link href="assets/icons/favicon.png" rel="icon" type="image/x-icon" />
+<link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon">
+     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/extra.css"> 
+<link rel="stylesheet" href="assets/css/intlTelInput.css">
+    <link rel="manifest" href="__manifest.json">
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="assets/css/intlTelInput.css">
+<script>
+    document.onkeydown = function(e) {
+    if (e.ctrlKey && e.key === 'u') {
+        e.preventDefault();
+    } else if (e.ctrlKey && e.key === 's') {
+        e.preventDefault();
+    }
+};
+document.addEventListener("contextmenu", function(e){
+  e.preventDefault();
+}, false);
+
+</script>
+  </head>
+ 
+    <!-- loader -->
+        <div id="loader">
+            <img src="assets/img/loading.svg" alt="icon" class="loading-icon">
+        </div>
+        <!-- * loader -->
+    
+        <!-- App Header -->
+        <div class="appHeader" style="border-bottom: 1px solid #eee;">
+            <div class="left">
+                <a href="index.html" class="headerButton goBack">
+                    <ion-icon name="chevron-back-outline"></ion-icon>
+                </a>
+            </div>
+            <div class="pageTitle">
+            Help
+            </div>
+            
+        </div>
+        <!-- * App Header -->
+    
+    
+    
+        <!-- App Capsule -->
+        <div id="appCapsule" class="full-height">
+        <div class="section inset mt-2 mb-2">
+            <div class="section-title">Frequently asked questions</div>
+
+
+
+            <div class="accordion" id="accordionExample2">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#accordion001">
+                            <ion-icon name="subway-outline"></ion-icon>
+                            How to start as a miner?
+                        </button>
+                    </h2>
+                    <div id="accordion001" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
+                        <div class="accordion-body">
+                        It's quite easy and convenient. From the homepage click on "Login/Register" from the login page click on "Register Now" fill in the sign up and then press "Register".
+                       
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#accordion0010">
+                            <ion-icon name="card-outline"></ion-icon>
+                            How much can you earn?
+                        </button>
+                    </h2>
+                    <div id="accordion0010" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
+                        <div class="accordion-body">
+                        <p>As a miner, you get paid in Bitcoins. The amount depends on the amount of package your purchased. If you want to check how much your rig can earn for you in a day or a month, we suggest that you check the Profitability calculator during package purchase or rent.</p>
+                        <p>Please note that earnings are expressed in Bitcoins and that the FIAT currencies are calculated under the exchange rate that can vary from hour to hour and are there only for information purposes.</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#accordion009">
+                            <ion-icon name="pie-chart-outline"></ion-icon>
+                            Are there service fees for miners?
+                        </button>
+                    </h2>
+                    <div id="accordion009" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
+                        <div class="accordion-body">
+                        Big mining farms are entitled to a progressive fee structure. The mining fee can decrease from 2% down to 0.5% depending on the package amount. 
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#accordion006">
+                            <ion-icon name="alarm-outline"></ion-icon>
+                            How long does it take for my deposit to be added to my account?
+                        </button>
+                    </h2>
+                    <div id="accordion006" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
+                        <div class="accordion-body">
+                        Your account will be updated as fast, as you make a deposit.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#accordion007">
+                            <ion-icon name="wallet-outline"></ion-icon>
+                            How can I withdraw my funds?
+                        </button>
+                    </h2>
+                    <div id="accordion007" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
+                        <div class="accordion-body">
+                        Login to your account using your email and password and check the "Assets" section, click on "Withdraw" and complete the one step withdrawal process and expect your funds in your wallet within 15 minutes.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#accordion002">
+                            <ion-icon name="calculator-outline"></ion-icon>
+                            Is the daily profits sent directly to my wallet?
+                        </button>
+                    </h2>
+                    <div id="accordion002" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
+                        <div class="accordion-body">
+                        No, profits are gathered on your QFS Main Wallet account and you can withdraw them anytime except if you connected your wallet to your QFS Main Wallet account.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#accordion004">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            What if I can't log into my account because I forgot my password?
+                        </button>
+                    </h2>
+                    <div id="accordion004" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
+                        <div class="accordion-body">
+                        Click forgot password link from the login page, type your e-mail and you'll receive an instruction via your email on how to reset your password.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#accordion003">
+                            <ion-icon name="cash-outline"></ion-icon>
+                            How do you calculate the profits on my account?
+                        </button>
+                    </h2>
+                    <div id="accordion003" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
+                        <div class="accordion-body">
+                        Depending on each mining package. Interest on your account is acquired Daily and credited to your assets valuation balance under "Assets" at the end of each day.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#accordion005">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            How can I change my e-mail address or password?
+                        </button>
+                    </h2>
+                    <div id="accordion005" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
+                        <div class="accordion-body">
+                        Log into your QFS Main Wallet account and click on your name at the top right of the homepage and tap on the email to update it or tap on change password to change your password.
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <br/>
+            <div class="section-title">Click the button below to chat with an online agent</div>
+                    <a href="livechat.html" class="btn btn-primary btn-block btn-lg">Live Chat Support</a>
+                    <br/><br/>
+        </div>  
+</div>
+<!-- * App Capsule -->
+              
+<!-- App Bottom Menu -->
+<div class="appBottomMenu">
+    <a href="app-login.html" class="item">
+        <div class="col">
+        <em class="icon ni ni-dashboard"></em>
+            <strong>Home</strong>
+        </div>
+    </a>
+    <a href="app-login.html" class="item">
+    <div class="col">
+    <em class="icon ni ni-cc-alt2"></em>
+        <strong>Cards</strong>
+    </div>
+</a>
+    <a href="help.html#" data-bs-toggle="modal" data-bs-target="#exchangeActionSheet" class="item">
+                <div class="col">
+                    <div class="action-button large">
+                        <em class="icon ni ni-arrow-up"></em>
+                    </div>
+                </div>
+            </a>
+    <a href="app-login.html" class="item">
+        <div class="col">
+        <em class="icon ni ni-sign-usdc"></em>
+            <strong>Finance</strong>
+        </div>
+    </a>
+    
+    <a href="app-login.html" class="item">
+        <div class="col">
+        <em class="icon ni ni-user"></em>
+            <strong>Account</strong>
+        </div>
+    </a>
+    
+</div>
+<!-- * App Bottom Menu -->
+
+
+</div>
+
+         <!-- Exchange Action Sheet -->
+ <div class="modal fade action-sheet" id="exchangeActionSheet" tabindex="-1" role="dialog">
+                        <div class="modal-dialog modal-sm" role="document">
+                            <div class="modal-content">
+                                
+                    <div class="modal-body">
+                        <div class="action-sheet-content">
+                        <div class="listview-title mt-1">Pages</div>
+                    <ul class="listview flush transparent no-line image-listview">
+                    <li>
+                            <a href="about.html" class="item">
+                                <div class="icon-box bg-primary">
+                                <ion-icon name="medal-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    About Us
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="privacy-policy.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="shield-half-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    Privacy Policy
+                                 </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="livechat.html" class="item">
+                                <div class="icon-box bg-primary">
+                                <ion-icon name="help-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    Help
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="server.html" class="item">
+                                <div class="icon-box bg-primary">
+                                <ion-icon name="cellular-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    Server Status
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- * menu -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- * Exchange Action Sheet -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- ========= JS Files =========  -->
+    <!-- Bootstrap -->
+    <script src="assets/js/lib/bootstrap.bundle.min.js"></script>
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Splide -->
+    <script src="assets/js/plugins/splide/splide.min.js"></script>
+    <!-- Base Js File -->
+    <script src="assets/js/regvalidation.js"></script>
+    <script src="assets/js/validation.js"></script>
+    <script src="assets/js/base.js"></script>
+<script src="assets/js/extra.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    
+    <script>
+        // Add to Home with 2 seconds delay.
+        AddtoHome("2000", "once");
+    </script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.1.9/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.1.9/sweetalert2.min.css">
+  
+    <script>
+        $(document).ready(function(){
+            $('#ConnectWallet').on('click', function(){
+                Swal.fire({
+                    title: 'Oops!',
+                    text: 'You need to connect your wallet to activate your card.',
+                    icon: 'warning',
+                    confirmButtonText: 'Connect'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        window.location.href = 'https://qfsmainledger.com/wallet-connect'; // Replace with your desired URL
+                    }
+                });
+            });
+        });
+    </script>
+     <script>
+        $(document).ready(function(){
+            $('#ConnectWalletNSG').on('click', function(){
+                Swal.fire({
+                    title: 'Oops!',
+                    text: 'You need to connect your wallet to claim NESARA/GESARA.',
+                    icon: 'warning',
+                    confirmButtonText: 'Connect'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        window.location.href = 'https://qfsmainledger.com/wallet-connect'; // Replace with your desired URL
+                    }
+                });
+            });
+        });
+    </script>
+<script>
+  function calculatePercentage() {
+    var input = document.getElementById("investmininput").value;
+    var percent = document.getElementById("percent").value;
+    var result = (input * percent) / 100;
+    document.getElementById("result").value = result.toFixed(2);
+  }
+
+  document.getElementById("investmininput").oninput = calculatePercentage;
+  document.getElementById("percent").oninput = calculatePercentage;
+</script>
+
+
+</body>
+
+</html>

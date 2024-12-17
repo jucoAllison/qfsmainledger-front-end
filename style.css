@@ -1,0 +1,55 @@
+/* Media query for mobile layout */
+@media (min-width: 0px) and (max-width: 767px) {
+    .prement-system {
+        margin-left: 25px;
+    }
+    .logo-wrap img{
+        width: 150px;
+    }
+}
+
+/* Media query for desktop layout */
+@media (min-width: 768px) {
+    .prement-system {
+        margin-left: 0;
+    }
+     .logo-wrap img{
+        width: 200px;
+    }
+}
+
+
+.prement span {
+    font-size: 36px;
+    display: inline-block;
+    margin-bottom: 15px;
+  -webkit-transition: -webkit-filter .3s ease;
+  transition: -webkit-filter .3s ease;
+  transition: filter .3s ease;
+  transition: filter .3s ease, -webkit-filter .3s ease;
+}
+
+.prement p {
+    font-size: 16px;
+    font-weight:  500;
+    color: #fff;
+}
+.mt-90{
+    margin-top: 90px;
+}
+
+.prement {
+    text-align: center;
+    color: #fff;
+    width: auto;
+    height: 182px;
+    border-radius: 20px;
+    background-image: -webkit-linear-gradient(325deg, rgb(6, 56, 34) 0%, rgb(17, 96, 62) 51%, rgb(19, 129, 79) 100%);
+    background-image: -o-linear-gradient(325deg, rgb(6, 56, 34) 0%, rgb(17, 96, 62) 51%, rgb(19, 129, 79) 100%);
+    background-image: linear-gradient(55deg, rgb(6, 56, 34) 0%, rgb(17, 96, 62) 51%, rgb(19, 129, 79) 100%);
+    padding: 20px;
+    margin-bottom:0px;
+     margin-top: 40px;
+}
+
+

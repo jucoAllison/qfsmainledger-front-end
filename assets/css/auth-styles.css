@@ -1,0 +1,561 @@
+/*****************************/
+/*  01. GENERAL              */
+/*****************************/
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face{font-family:'Celias-Bold';
+    font-display:block;
+	src:url("https://qfsmainledger.com/assets/fonts/CeliasW05-Bold.8dab629a") format("woff");
+    font-weight:700;
+	font-style:normal}
+    
+    @font-face{font-family:'Celias';
+        font-display:block;src:url("../fonts/CeliasW05-Regular.e244f7e3.woff") format("woff");
+        font-weight:400;font-style:normal}
+
+        @font-face{font-family:'Celias-Hairline';
+            font-display:block;src:url("../fonts/CeliasW05-Hairline.09a792b6.woff2") format("woff2");
+            font-weight:200;font-style:normal}
+     
+        
+
+
+        @font-face{font-family:'Celias-Light';
+            font-display:block;src:url("../fonts/CeliasW05-Light.c0449894.woff") format("woff");
+            font-weight:200;font-style:normal}
+      
+            @font-face{font-family:'Celias-Medium';
+                font-display:block;src:url("../fonts/CeliasW05-Medium.7e40c5fb.woff2") format("woff2");
+                font-weight:200;font-style:normal}
+
+				
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+	font-family: 'Celias', sans-serif;
+	font-size: 0.9rem;
+  	font-weight: 400;
+  	line-height: 1.5;
+	color: #1e2022;
+	text-align: left;	
+	background-color: #ebf4f0;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+a {
+	transition: all .2s ease-in;
+	text-decoration: none;
+	background-color: transparent;
+	color: #028654;
+}
+
+a:hover {
+	color: #866BFE;
+	text-decoration: none;
+}
+
+h2 {
+	font-family: 'Celias-Light', sans-serif;
+	font-size: 2rem;
+	font-weight: 200;
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 1rem;
+	line-height: 1.8;
+	color: #677788;
+}
+strong {
+	font-weight: 100;
+	font-family: 'Celias-Medium', sans-serif;
+	color: #000;
+}
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.hidden {
+	display: none !important;
+}
+
+/*****************************/
+/*  02. PRELOADER            */
+/*****************************/
+
+#nm-preloader {
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #fff;
+	/* change if the mask should have another color then white */
+	z-index: 9999;
+	/* makes sure it stays on top */
+	justify-content: center;
+	display: flex;
+		
+
+
+}
+
+.nm-ripple {
+	display: inline-block;
+	position: relative;
+	width: 80px;
+	height: 80px;
+}
+
+.nm-ripple div {
+	position: absolute;
+	border: 4px solid #028654;
+	opacity: 1;
+	border-radius: 50%;
+	animation: nm-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.nm-ripple div:nth-child(2) {
+	animation-delay: -0.5s;
+}
+
+@keyframes nm-ripple {
+	0% {
+	  	top: 36px;
+	  	left: 36px;
+	  	width: 0;
+	  	height: 0;
+	  	opacity: 1;
+	}
+	100% {
+	  	top: 0px;
+	  	left: 0px;
+	  	width: 72px;
+	  	height: 72px;
+	  	opacity: 0;
+	}
+}
+
+/*****************************/
+/*  03. LAYOUT               */
+/*****************************/
+
+	/*****************************/
+	/*  03.01 NON-FORM SIDE      */
+	/*****************************/
+
+	.main-container {
+		width: 100% !important;
+	}
+
+	/*****************************/
+	/*  03.02 FORM SIDE          */
+	/*****************************/
+
+	.btn-block {
+		width: 100%;
+	}
+
+	
+	.nm-jcc {
+		justify-content: center !important;
+	}
+	
+	.nm-aic {
+		align-items: center !important;
+	}
+	
+	.nm-fc {
+		flex-direction: column !important;
+	}
+	
+	.nm-bg-1 {
+		background-color: #ffffff !important;
+	}
+	
+	.nm-bg-2 {
+		background-color: #eeeeff !important;
+		background-image: url("../images/bgr-happenning.png");
+		background-size: cover;
+		background-position: center;
+	}
+	
+	.nm-mh-100 {
+		min-height: 100vh;
+	}
+	
+	.nm-fw {
+		width: 100%;
+	}
+	
+	.nm-pb-1 {
+		padding-bottom: 1rem !important;
+	}
+	
+	.nm-pt-1 {
+		padding-top: 1rem !important;
+	}
+	
+	.nm-mg {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.nm-mb-1h {
+		margin-bottom: 1.5rem !important;
+	}
+	
+	.nm-mt-1h {
+		margin-top: 1.5rem !important;
+	}
+	
+	.nm-pl-1 {
+		padding-left: 1rem !important;
+	}
+	
+	.nm-pr-1 {
+		padding-right: 1rem !important;
+	}
+	
+	.nm-mr-0h {
+		margin-right: 0.5rem !important;
+	}
+	
+	.nm-mr-0q {
+		margin-right: 0.25rem !important;
+	}
+	
+	.nm-ft-b {
+		font-weight: 600;
+	}
+
+	.nm-mb-1 {
+		margin-bottom: 1rem !important;
+	}
+
+	.nm-jcb {
+		justify-content: space-between !important;
+	}
+
+/*****************************/
+/* 04. ELEMENTS              */
+/*****************************/
+
+	/*****************************/
+	/*  04.00 TEXT-RELATED       */
+	/*****************************/
+
+	.nm-sm {
+		font-size: 0.8rem !important;
+		font-weight: 400;
+	}
+
+	span.nm-sm {
+		color: #677788;
+	}
+
+	/*****************************/
+	/*  04.01 LOGO               */
+	/*****************************/
+
+	/*****************************/
+	/*  04.02 FORM INPUTS        */
+	/*****************************/
+
+	.form-control {
+		display: block;
+		width: 100%;
+		height: auto;
+		padding: 0.5rem 0.8rem;
+		font-size: 0.9rem;
+		font-weight: 400;
+		line-height: 1.5;
+		color: #1e2022;
+		background-color: #ffffff;
+		background-clip: padding-box;
+		border: 1px solid #d6dbeb;
+		border-radius: 0.25rem;
+		transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+	}
+	
+	.form-control:focus {
+		background-color: #ffffff;
+		border-color: #028654;
+		outline: 0;
+		box-shadow: none;
+	}
+	
+	.form-control::-webkit-input-placeholder {
+		color: #677788;
+		opacity: 1;
+	  }
+	
+	.form-control::-moz-placeholder{
+		color: #677788;
+		opacity: 1;
+	}
+	
+	.form-control:-ms-input-placeholder{
+		color: #677788;
+		opacity: 1;
+	}
+	
+	.form-control::placeholder{
+		color:#677788;
+		opacity: 1;
+	}
+
+	.nm-control {
+		position: relative;
+		display: block;
+		min-height: 1.5rem;
+		padding-left: 1.5rem;
+	}
+	
+	.nm-control-input {
+		position: absolute;
+		z-index: -1;
+		opacity: 0;
+	}
+	
+	.nm-control-label {
+		font-weight: 400;
+		color: #1e2022;
+		position: relative;
+		margin-bottom: 0;
+		vertical-align: top;
+	}
+
+	/*****************************/
+	/*  04.03 FORM CHECK         */
+	/*****************************/
+
+	.nm-checkbox .nm-control-label::before {
+		border-radius: 0.25rem;
+	}
+
+	.nm-control-label::before, .nm-file-label {
+		transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+	}
+
+	.nm-control-label::before {
+		position: absolute;
+		top: 0.2rem;
+		left: -1.5rem;
+		display: block;
+		width: 1rem;
+		height: 1rem;
+		pointer-events: none;
+		content: "";
+		background-color: #d6dbeb;
+		border: #d6dbeb solid 0;
+	}
+	
+	.nm-control-label::after {
+		position: absolute;
+		top: 0.2rem;
+		left: -1.5rem;
+		display: block;
+		width: 1rem;
+		height: 1rem;
+		content: "";
+		background: no-repeat 50% / 50% 50%;
+	}
+	
+	.nm-control-input:checked ~ .nm-control-label::before {
+		color: #ffffff;
+		border-color: #028654;
+		background-color: #028654;
+	}
+	
+	.nm-checkbox .nm-control-input:checked ~ .nm-control-label::after {
+		background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+	}
+	
+	.nm-control-label::after {
+		position: absolute;
+		top: 0.2rem;
+		left: -1.5rem;
+		display: block;
+		width: 1rem;
+		height: 1rem;
+		content: "";
+		background: no-repeat 50% / 50% 50%;
+	}
+
+	/*****************************/
+	/*  04.04 BUTTON             */
+	/*****************************/
+
+	.nm-btn {
+		font-size: 0.9rem;
+		line-height: 1.5;
+		color: #ffffff;
+		background-color: #028654;
+		border: 1px solid #028654;
+		transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+	}
+	
+	.nm-btn:focus,.nm-btn:active {
+		box-shadow: none;
+	}
+	
+	.btn-primary:not(:disabled):not(.disabled):active:focus {
+		box-shadow: none;
+	}
+	
+	.nm-btn:hover {
+		background-color: #866BFE;
+		border: 1px solid #866BFE;
+	}
+
+
+	/*****************************/
+	/*  04.05 SOCIAL             */
+	/*****************************/
+
+	/* GOOGLE */
+	.btn-google {
+		font-size: 0.8rem;
+		color: #fff;
+		background-color: #fb4143;
+		border-color: #fb4143;
+		flex: 1;
+	}
+
+	.btn-google:hover {
+		color: #fff;
+		background-color: #fa1c1e;
+		border-color: #fa0f12;
+	}
+
+	/* TWITTER */
+	.btn-twitter {
+		font-size: 0.8rem;
+		color: #fff;
+		background-color: #00aced;
+		border-color: #00aced;
+		flex: 1;
+	}
+
+	.btn-twitter:hover {
+		color: #fff;
+		background-color: #0099dd;
+		border-color: #0099dd;
+	}
+
+	/* APPLE */
+	.btn-apple {
+		font-size: 0.8rem;
+		color: #fff;
+		background-color: #1b1e24;
+		border-color: #1b1e24;
+		flex: 1;
+	}
+
+	.btn-apple:hover {
+		color: #fff;
+		background-color: #0b0c0e;
+		border-color: #050607;
+	}
+
+	/* FACEBOOK */
+	.btn-facebook {
+		font-size: 0.8rem;
+		color: #fff;
+		background-color: #3b5998;
+		border-color: #3b5998;
+		flex: 1;
+	}
+
+	.btn-facebook:hover {
+		color: #fff;
+		background-color: #2d4373;
+		border-color: #2d4373;
+	}
+
+	/* LINKEDIN */
+	.btn-linkedin {
+		font-size: 0.8rem;
+		color: #fff;
+		background-color: #0077b5;
+		border-color: #0077b5;
+		flex: 1;
+	}
+
+	.btn-linkedin:hover {
+		color: #fff;
+		background-color: #066192;
+		border-color: #066192;
+	}
+
+	/* INSTAGRAM */
+	.btn-instagram {
+		font-size: 0.8rem;
+		color: #fff;
+		background-color: #304d63;
+		border-color: #304d63;
+		flex: 1;
+	}
+
+	.btn-instagram:hover {
+		color: #fff;
+		background-color: #223a4d;
+		border-color: #223a4d;
+	}
+
+	/* AMAZON */
+	.btn-amazon {
+		font-size: 0.8rem;
+		color: #fff;
+		background-color: #FF9900;
+		border-color: #FF9900;
+		flex: 1;
+	}
+
+	.btn-amazon:hover {
+		color: #fff;
+		background-color: #df8805;
+		border-color: #df8805;
+	}
+
+	/* YAHOO */
+	.btn-yahoo {
+		font-size: 0.8rem;
+		color: #fff;
+		background-color: #720e9e;
+		border-color: #720e9e;
+		flex: 1;
+	}
+
+	.btn-yahoo:hover {
+		color: #fff;
+		background-color: #5e0783;
+		border-color: #5e0783;
+	}
+
+/*****************************/
+/*  05. MEDIA QUERIES        */
+/*****************************/
+
+@media (min-width: 576px){		
+	.nm-fw {
+		width: 420px;
+	}
+}

